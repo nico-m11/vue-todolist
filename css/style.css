@@ -1,0 +1,18 @@
+.logo {
+  height: 150px;
+  width: 450px;
+}
+
+.container {
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.secondo {
+  margin-top: 50px;
+}
+
+.btn-danger {
+  font-size: 0.8rem;
+  margin-left: 200px;
+}
