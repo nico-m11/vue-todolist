@@ -26,8 +26,8 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<ul class="list-group list-group-flush">
-							<li v-for='(element, index) in inputUtente' class="list-group-item">{{ element }}
-								<button @click='cancellaInput()' type="button" class="btn btn-danger">   Cancella <i class="far fa-trash-alt"></i></button>
+							<li v-bind:class="{myActive:active[index]}" @click.stop="actived(index)" v-for='(element, index) in inputUtente' class="list-group-item">{{ element }}
+								<button @click.stop='cancellaInput()' type="button" class="btn btn-danger">   Cancella <i class="far fa-trash-alt"></i></button>
 							</li>
 						</ul>
 					</div>
